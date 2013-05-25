@@ -1,0 +1,4 @@
+class Task < ActiveRecord::Base
+  attr_accessible :done, :due, :name, :bug, :notes, :priority 
+  validates :name, presence: true
+end

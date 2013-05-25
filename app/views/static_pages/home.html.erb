@@ -1,0 +1,37 @@
+<div class="center hero-unit">
+  <h1>Вітаємо вас в Системі Керування Проектами!</h1>
+
+  <h2>
+    Це головна сторінка для 
+    <a href="http://localhost:3000/">Системи керування Проектами</a>
+    .
+  </h2>
+
+
+
+   <%= link_to "Зареєструватися", new_user_registration_path , class: "btn btn-large btn-primary" %>
+</div>
+
+
+<%= link_to image_tag("bug.png", alt: "Rails"), 'http://uk.wikipedia.org/wiki/%D0%91%D0%B0%D0%B3%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80' %>  
+ 
+ 
+  
+<li> <% if user_signed_in? %></li>
+ <li>  <%= link_to "Edit", edit_user_registration_path %> 
+<% end %>
+
+
+
+
+
+<sh>Поділитись з друзями:</sh>
+<icons>
+<script type="text/javascript" src="//yandex.st/share/share.js"
+charset="utf-8"></script>
+<div class="yashare-auto-init" data-yashareL10n="ru"
+ data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir"
+>
+
+</div>
+</icons>

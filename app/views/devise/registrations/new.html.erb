@@ -1,0 +1,24 @@
+<h2>Реєстрація</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.label :Пароль %><br />
+  <%= f.password_field :password %></div>
+
+  <div><%= f.label :Підтвердіть_Пароль %><br />
+  <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.submit "Зареєструватися", class: "btn btn-default btn-primary" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+<reg>
+ <%=image_tag("asd.jpg", alt: "Example Image",:width => 380, :height => 450 )%>
+ 
+</reg>
+
